@@ -10,6 +10,7 @@ interface Note {
 }
 
 export function App() {
+  const [search, setSearch] = useState('');
   const [notes, setNotes] = useState<Note[]>(() => {
     const savedNotes = localStorage.getItem('notes');
 
@@ -34,6 +35,16 @@ export function App() {
     localStorage.setItem('notes', JSON.stringify(notesArray));
   }
 
+  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const query = event.target.value;
+
+    setSearch(query);
+  }
+
+  const filteredNotes = search !== ''
+  ? notes.filter(note => note.content.toLocaleLowerCase().includes(search))
+  : notes;
+
   return (
     <div className='mx-auto max-w-6xl my-12 space-y-6'>
       <img src={logo} alt="Logo do NLW Expert" />
@@ -42,6 +53,7 @@ export function App() {
           type='text'
           placeholder='Busque suas notas...'
           className='w-full bg-transparent text-3xl font-semibold tracking-tight outline-none placeholder: text-slate-500'
+          onChange={handleSearch}
         />
       </form>
 
@@ -50,7 +62,7 @@ export function App() {
       <div className='grid grid-cols-3 gap-6 auto-rows-[250px]'>
         <NewNoteCard onNoteCreated={onNoteCreated} />
         {
-          notes.map(note => (<NoteCard note={note} key={note.id} />))
+          filteredNotes.map(note => (<NoteCard note={note} key={note.id} />))
         }
       </div>
     </div>
