@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  <img alt="expert-notes" title="expert-notes" src="./src/assets/logo-readme.svg" />
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#technologist-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/licence-MIT-green" />
+  <img alt="Issues" src="https://img.shields.io/github/issues/brenomr/nlw-expert-notes" />
+  <img alt="Stars" src="https://img.shields.io/github/stars/brenomr/nlw-expert-notes" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img alt="Tela do app" src="./src/assets/project-screen.png" width="100%">
+</p>
 
-## Expanding the ESLint configuration
+## :technologist: Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Este projeto faz uso das seguintes tecnologias:
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Radix](https://www.radix-ui.com/).
+- [Tailwindcss]https://tailwindcss.com/).
 
-- Configure the top-level `parserOptions` property like this:
+## 💻 Projeto
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+O Expert Notes é uma aplicação web que permite o usuário criar pequenos cartões de notas, através de texto digitado ou reconhecimento de voz.
+Desenvolvido durante o Next Level Week Expert da Rocketseat.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🚀 Como executar
+
+- Clone o repositório
+- Instale as dependências com `npm install` (node 20.11.0)
+- Inicie o servidor com `npm run dev`
+
+O servidor deverá iniciar no endereço: [http://localhost:5173/](http://localhost:5173/)
+
+## 📄 Licença
+
+Acesse [LICENSE](LICENSE.md) para mais informações sobre a licença.
+
+## ♥ Agradecimento
+
+A toda a equipe da Rocketseat por mostrar os caminhos para o próximo nível!
