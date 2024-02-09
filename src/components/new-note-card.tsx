@@ -8,12 +8,13 @@ interface NewNoteCardProps {
   onNoteCreated: (content: string) => void;
 }
 
+let speechRecognition: SpeechRecognition | null = null;
+
 export function NewNoteCard({ onNoteCreated }: NewNoteCardProps) {
   const [showOnboarding, setShowOnboarding] = useState(true);
   const [noteContent, setNoteContent] = useState('');
   const [isRecording, setIsRecording] = useState(false);
 
-  let speechRecognition: SpeechRecognition | null = null;
 
   const handleShowOnboarding = () => {
     setShowOnboarding(false);
