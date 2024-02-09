@@ -26,7 +26,7 @@ Este projeto faz uso das seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
 - [Radix](https://www.radix-ui.com/).
-- [Tailwindcss]https://tailwindcss.com/).
+- [Tailwindcss](https://tailwindcss.com/).
 
 ## 💻 Projeto
 
