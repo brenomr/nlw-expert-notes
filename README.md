@@ -22,16 +22,17 @@
 ## :technologist: Tecnologias
 
 Este projeto faz uso das seguintes tecnologias:
-- [React](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org).
+- [TypeScript](https://www.typescriptlang.org/).
+- [Vite](https://vitejs.dev/).
 - [Radix](https://www.radix-ui.com/).
 - [Tailwindcss](https://tailwindcss.com/).
 
 ## 💻 Projeto
 
 O Expert Notes é uma aplicação web que permite o usuário criar pequenos cartões de notas, através de texto digitado ou reconhecimento de voz.
-Desenvolvido durante o Next Level Week Expert da Rocketseat.
+
+<b>Desenvolvido durante o Next Level Week Expert da Rocketseat.</b>
 
 ## 🚀 Como executar
 
